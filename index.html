@@ -11,6 +11,30 @@
       <h1>Media og dialog</h1>
     </header>
     <main>
+      <section id="my-dialog">
+        <button onclick="document.getElementById('best-dialog').showModal()">
+          Open dialog!
+        </button>
+        <dialog id="best-dialog">
+          <button
+            id="closebtn"
+            onclick="document.getElementById('best-dialog').close()"
+          >
+            X
+            <br /><br /><br />
+            <iframe
+              width="560"
+              height="315"
+              src="https://www.youtube.com/embed/dQw4w9WgXcQ?si=3WocDBz-tlYlQDOI"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin"
+              allowfullscreen
+            ></iframe>
+          </button>
+        </dialog>
+      </section>
       <section id="video">
         <video
           src="./media/video.mp4"
